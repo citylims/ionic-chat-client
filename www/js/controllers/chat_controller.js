@@ -17,10 +17,14 @@ app.controller('ChatCtrl', function($state, $stateParams, $scope, $ionicScrollDe
   }
 
   $scope.sendMessage = function(message) {
-    socket.emit('new message', message)
-    addMessageToList($stateParams.nickname, message)
-    socket.emit('stop typing');
-    $scope.message = ""
+    if (message === undefined) {
+      alert("Empty Message");
+    } else {
+      socket.emit('new message', message)
+      addMessageToList($stateParams.nickname, message)
+      socket.emit('stop typing');
+      $scope.message = ""
+    }
   }
 
   function addMessageToList(username, message){
