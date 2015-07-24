@@ -77,3 +77,14 @@ padding-top: 0px;
 .chat-header button {
   color: white !important;
 }
+
+.display-message {
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.display-message span {
+  font-weight: 500;
+  color: #25cecd;
+}

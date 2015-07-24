@@ -8,11 +8,11 @@
     </ion-nav-bar>
     <ion-content has-bouncing="true" class="content">
       <div>
-        <div class="log pad2">"Welcome to Socket.IO Chat – ";</div>
+        <div class="log pad2">Ionic-Chat</div>
         <div class="log"></div>
       </div>
       <ul>
-        	<li ng-repeat="message in messages">
+        	<li class="display-message" ng-repeat="message in messages">
         		<span class=>{{message.username}}:</span> {{message.content}}
         	</li>
         </ul>
