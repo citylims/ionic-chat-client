@@ -15,8 +15,11 @@
     <div class="list light-grey bottommsg">
         <div class="item item-input-inset light-grey">
           <label  class="item-input-wrapper line-light-grey nopadtop">
-            <input class="line-light-grey" type="text"  placeholder="Message">
+            <input class="line-light-grey" type="text"  placeholder="Message" ng-model="message">
           </label>
+          <div class="divsend">
+                <button class="button button-clear ion-android-send iconsend" ng-click="sendMessage(message)"></button>
+          </div>
         </div>
     </div>
  </ion-view>
