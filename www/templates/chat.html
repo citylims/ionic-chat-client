@@ -1,30 +1,30 @@
 <ion-view view-title="IonicChat by Austin Formica" ng-controller="ChatCtrl as chatCtrl" class="light-grey">
-    <ion-nav-bar class="bar chat-header" >
-      <ion-nav-buttons side="left">
-        <button class="button button-clear white" ng-click="goLogin()">
-          Back
-        </button>
-      </ion-nav-buttons>
-    </ion-nav-bar>
-    <ion-content has-bouncing="true" class="content">
-      <div>
-        <div class="log pad2">Ionic-Chat</div>
-        <div class="log"></div>
-      </div>
-      <ul>
-        	<li class="display-message" ng-repeat="message in messages">
-        		<span class=>{{message.username}}:</span> {{message.content}}
-        	</li>
-        </ul>
-    </ion-content>
-    <div class="list light-grey bottom-msg">
-        <div class="item item-input-inset light-grey">
-          <label  class="item-input-wrapper line-light-grey nopadtop">
-            <input class="line-light-grey" type="text"  placeholder="Message" ng-model="message">
-          </label>
-          <div class="send">
-                <button class="button button-clear ion-paper-airplane icon-send" ng-click="sendMessage(message)"></button>
-          </div>
-        </div>
+  <ion-nav-bar class="bar chat-header" >
+    <ion-nav-buttons side="left">
+      <button class="button button-clear white" ng-click="goLogin()">
+        Back
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content has-bouncing="true" class="content">
+    <div>
+      <div class="log pad2">Ionic-Chat</div>
+      <div class="log"></div>
     </div>
+    <ul>
+    	<li class="display-message" ng-repeat="message in messages">
+    		<span class=>{{message.username}}:</span> {{message.content}}
+    	</li>
+    </ul>
+    <div class="list light-grey bottom-msg">
+      <div class="item item-input-inset light-grey">
+        <label  class="item-input-wrapper line-light-grey nopadtop">
+          <input class="line-light-grey" type="text"  placeholder="Message" ng-model="message">
+        </label>
+        <div class="send">
+          <button class="button button-clear ion-paper-airplane icon-send" ng-click="sendMessage(message)"></button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
  </ion-view>
