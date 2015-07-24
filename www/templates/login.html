@@ -1,10 +1,10 @@
-<ion-view ng-controller="LoginCtrl as logcntrl" class="light">
+<ion-view ng-controller="LoginCtrl" class="light">
   <ion-content class="light">
     <div class="list list-inset light top180">
       <label class="item item-input linegrey" >
-        <input type="text" class="linegrey white" placeholder="What is your nickname?" ng-model="logcntrl.nickname">
+        <input type="text" class="linegrey white" placeholder="What is your nickname?" ng-model="nickname">
       </label>
-      <button class="button button-block button-grey" ng-click="logcntrl.join()">Join</button>
+      <button class="button button-block button-grey" ng-click="join(nickname)">Join</button>
     </div>
   </ion-content>
 </ion-view>

@@ -1,10 +1,9 @@
-app.controller('LoginCtrl', function($state, $sanitize) {
-  var self = this;
+app.controller('LoginCtrl', function($state, $scope, $sanitize) {
 
-  self.join = function() {
-    var nickname = $sanitize(self.nickname);
-    if (nickname) {
-      $state.go('chat',{nickname:nickname})
+  $scope.join = function(name) {
+    var user = $sanitize(name);
+    if (user) {
+      $state.go('chat',{nickname: user})
     }
   }
 
