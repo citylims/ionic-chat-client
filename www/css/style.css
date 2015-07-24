@@ -1,10 +1,10 @@
 .light{
-	background-color: #2E2E31;
+	background-color: #25cecd;
 }
 
 .linegrey{
 
-	background-color: #2E2E31;
+	background-color: #F6F6F6;
 	border:none;
 	border-bottom: 1px solid #8DB4B4;
 }
@@ -14,7 +14,7 @@
 }
 
 input.white{
-	color:#fff;
+	color:black;
 	font-size:18px;
 }
 
@@ -71,4 +71,13 @@ padding-top: 0px;
 
 .content{
 	bottom:68px;
+}
+
+.chat-header {
+  background-color: #25cecd;
+  color: white;
+}
+
+.chat-header button {
+  color: white !important;
 }
