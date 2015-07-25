@@ -16,15 +16,15 @@
     		<span class=>{{message.username}}:</span> {{message.content}}
     	</li>
     </ul>
-    <div class="list light-grey bottom-msg">
-      <div class="item item-input-inset light-grey">
-        <label  class="item-input-wrapper line-light-grey nopadtop">
-          <input class="line-light-grey" type="text"  placeholder="Message" ng-model="message">
-        </label>
-        <div class="send">
-          <button class="button button-clear ion-paper-airplane icon-send" ng-click="sendMessage(message)"></button>
-        </div>
+  </ion-content>
+  <div class="list light-grey bottom-msg">
+    <div class="item item-input-inset light-grey">
+      <label  class="item-input-wrapper line-light-grey nopadtop">
+        <input class="line-light-grey" type="text"  placeholder="Message" ng-model="message">
+      </label>
+      <div class="send">
+        <button class="button button-clear ion-paper-airplane icon-send" ng-click="sendMessage(message)"></button>
       </div>
     </div>
-  </ion-content>
+  </div>
  </ion-view>
